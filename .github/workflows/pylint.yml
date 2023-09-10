@@ -32,8 +32,8 @@ jobs:
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
-      # - name: Build and push
-      #   uses: docker/build-push-action@v4
-      #   with:
-      #     push: true
-      #     tags: dennysv/githubaction-flask:latest
+      - name: Build and push
+        uses: docker/build-push-action@v4
+        with:
+          push: true
+          tags: dennysv/githubaction-flask:latest
