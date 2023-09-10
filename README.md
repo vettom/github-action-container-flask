@@ -1,6 +1,6 @@
 # Task in hand
 
-## Build and deploy python flask app to container, ecs
+## Build and deploy python flask app to container
 
 # CI Tasks
 - Up on pull
@@ -8,8 +8,6 @@
   - test app
   - build container
   - upload to repo
-- On approval
-  - pylint
 
 
 # Generate requirement.txt
