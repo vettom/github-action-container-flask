@@ -6,9 +6,10 @@ on:
       - 'main'
 
 jobs:
-  common_env:
-    runs-on: ubuntu-latest
+  # common_env:
+  #   runs-on: ubuntu-latest
   test:
+    runs-on: ubuntu-latest
     strategy:
       matrix:
         python-version: ["3.10"]
@@ -26,6 +27,7 @@ jobs:
       run: |
         pylint $(git ls-files '*.py')
   docker:
+    runs-on: ubuntu-latest
     needs: test
     steps:
       - name: Set up QEMU
